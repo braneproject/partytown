@@ -1,6 +1,6 @@
 {
-  "name": "@builder.io/partytown",
-  "version": "0.2.1",
+  "name": "@braneproject/partytown",
+  "version": "0.1.0",
   "description": "Relocate resource intensive third-party scripts off of the main thread and into a web worker.",
   "license": "MIT",
   "main": "index.cjs",
@@ -60,7 +60,8 @@
     "test.unit": "uvu -r tsm tests/unit",
     "tsc.watch": "tsc -w",
     "version": "npm run build.prod",
-    "fmt": "prettier --config package.json --write src"
+    "fmt": "prettier --config package.json --write src",
+    "prepack": "npm run build.prod"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.19.2",
@@ -91,11 +92,10 @@
     "useTabs": false,
     "quoteProps": "consistent"
   },
-  "author": "Builder.io Team",
-  "homepage": "https://github.com/BuilderIO/partytown#readme",
+  "homepage": "https://github.com/braneproject/partytown#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BuilderIO/partytown.git"
+    "url": "git+https://github.com/braneproject/partytown.git"
   },
   "keywords": [
     "web worker",
